@@ -7,11 +7,11 @@ Now, if you consider a given number d, how many proper fractions can be built us
 For example, let's assume that d is 15: you can build a total of 8 different proper fractions between 0 and 1 with it: 1/15, 2/15, 4/15, 7/15, 8/15, 11/15, 13/15 and 14/15.
 
 You are to build a function that computes how many proper fractions you can build with a given denominator:
-'''
+```
 proper_fractions(1)==0
 proper_fractions(2)==1
 proper_fractions(5)==4
 proper_fractions(15)==8
 proper_fractions(25)==20
-'''
+```
 Be ready to handle big numbers.

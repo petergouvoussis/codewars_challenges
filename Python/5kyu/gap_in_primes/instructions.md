@@ -18,13 +18,13 @@ So this function should return the first pair of two prime numbers spaced with a
 
 In C++, Lua: return in such a case {0, 0}. In F#: return [||]. In Kotlin, Dart and Prolog: return []. In Pascal: return Type TGap (0, 0).
 Examples:
-'''
+```
     gap(2, 5, 7) --> [5, 7] or (5, 7) or {5, 7}
 
     gap(2, 5, 5) --> nil. In C++ {0, 0}. In F# [||]. In Kotlin, Dart and Prolog return []`
 
     gap(4, 130, 200) --> [163, 167] or (163, 167) or {163, 167}
-'''
+```
 ([193, 197] is also such a 4-gap primes between 130 and 200 but it's not the first pair)
 
     gap(6,100,110) --> nil or {0, 0} or ... : between 100 and 110 we have 101, 103, 107, 109 but 101-107is not a 6-gap because there is 103in between and 103-109is not a 6-gap because there is 107in between.
